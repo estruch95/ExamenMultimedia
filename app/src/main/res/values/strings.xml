@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ExamenMultimedia</string>
+    <string name="entrada_datos">Entrada de datos</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="cobraments">Cobraments</string>
+    <string name="pagaments">Pagaments</string>
+    <string name="l.cobraments">Llistat cobraments</string>
+    <string name="l.pagaments">Llistat pagaments</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="pagador">Pagador:</string>
+    <string name="n_pagador">Nombre del pagador</string>
+    <string name="cobrador">Cobrador:</string>
+    <string name="importe">Importe:</string>
+    <string name="concepto">Concepto:</string>
+    <string name="e_concepto">Escribid aquí el concepto</string>
+    <string name="enviar_datos">Enviar datos</string>
+    <string name="title_activity_listas_cobros_ypagos">ListasCobrosYpagos</string>
+    <string name="entradadatos">Entrada de datos</string>
+</resources>

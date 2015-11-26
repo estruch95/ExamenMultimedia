@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="163dp"
+        android:layout_height="240dp"
+        android:id="@+id/btnCobraments"
+        android:onClick="accionBtnCobraments"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/cobraments" />
+
+    <Button
+        android:layout_width="163dp"
+        android:layout_height="240dp"
+        android:text="@string/pagaments"
+        android:id="@+id/btnPagaments"
+        android:drawableBottom="@drawable/img1"
+        android:onClick="accionBtnPagaments"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/btnCobraments" />
+
+    <Button
+        android:layout_width="163dp"
+        android:layout_height="240dp"
+        android:text="@string/l.cobraments"
+        android:id="@+id/btnLlistatCobraments"
+        android:drawableBottom="@drawable/img2"
+        android:onClick="accionBtnLlistaCobraments"
+        android:layout_below="@+id/btnCobraments"
+        android:layout_toStartOf="@+id/btnPagaments" />
+
+    <Button
+        android:layout_width="163dp"
+        android:layout_height="240dp"
+        android:text="@string/l.pagaments"
+        android:id="@+id/btnLlistatPagaments"
+        android:drawableBottom="@drawable/img3"
+        android:onClick="accionBtnLlistaPagaments"
+        android:layout_alignTop="@+id/btnLlistatCobraments"
+        android:layout_alignStart="@+id/btnPagaments" />
+</RelativeLayout>

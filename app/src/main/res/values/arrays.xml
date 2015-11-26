@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="cobradores">
+        <item>Cobrador 1</item>
+        <item>Cobrador 2</item>
+        <item>Cobrador 3</item>
+        <item>Otros</item>
+    </array>
+</resources>

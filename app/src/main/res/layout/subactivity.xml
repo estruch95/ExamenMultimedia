@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.estruch18.examenmultimedia.SubActivity"
+    android:id="@+id/relativeLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/pagador"
+        android:id="@+id/tvPagador"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/n_pagador"
+        android:ems="10"
+        android:id="@+id/etNombrePagador"
+        android:layout_below="@+id/tvPagador"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/cobrador"
+        android:id="@+id/tvCobrador"
+        android:layout_below="@+id/etNombrePagador"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spCobradores"
+        android:layout_below="@+id/etNombrePagador"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tvCobrador"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvIm"
+        android:layout_below="@+id/spCobradores"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/importe" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvCon"
+        android:text="@string/concepto"
+        android:layout_below="@+id/etImporte"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvConceptoExtra"
+        android:text="@string/e_concepto"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tvCon"
+        android:layout_toEndOf="@+id/tvIm" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar_datos"
+        android:id="@+id/btnEnviarDatos"
+        android:onClick="accionBtnEnviarDatos"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etImporte"
+        android:layout_below="@+id/tvIm"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/etConcepto"
+        android:layout_below="@+id/tvConceptoExtra"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/spCobradores"
+        android:layout_above="@+id/btnEnviarDatos" />
+</RelativeLayout>

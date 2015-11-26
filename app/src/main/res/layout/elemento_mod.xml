@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="De:"
+            android:id="@+id/tvDe"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="A:"
+            android:id="@+id/tvA"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tvDe"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Concepto:"
+            android:id="@+id/tvCon"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tvA"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pagador"
+            android:id="@+id/tvPagador"
+            android:layout_alignTop="@+id/tvDe"
+            android:layout_toEndOf="@+id/tvDe"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Cobrador"
+            android:id="@+id/tvCobrador"
+            android:layout_alignTop="@+id/tvA"
+            android:layout_toEndOf="@+id/tvDe"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Concepto descripcion"
+            android:id="@+id/tvConcepto"
+            android:layout_below="@+id/img"
+            android:layout_alignStart="@+id/tvCon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Importe:"
+            android:id="@+id/tvIm"
+            android:layout_alignTop="@+id/tvImporte"
+            android:layout_toStartOf="@+id/img"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Precio€"
+            android:id="@+id/tvImporte"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:layout_alignTop="@+id/tvPagador"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="38dp" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/img"
+            android:layout_alignTop="@+id/tvCobrador"
+            android:layout_alignEnd="@+id/tvImporte" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
